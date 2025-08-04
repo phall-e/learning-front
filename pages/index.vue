@@ -34,7 +34,7 @@
   const items: any = ref([]);
   const handleGetUser = async()=>{
     try {
-      const response = await $fetch('http://localhost:8000/api/user', {
+      const response = await $fetch('http://www.myapp.me/api/user', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
