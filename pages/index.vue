@@ -1,32 +1,9 @@
 <template>
-  <div class="flex items-center h-screen flex-col justify-center">
-    <h1>User Information</h1>
-   <ElTable
-    :data="items"
-    stripe
-   >
-    <ElTableColumn type="index"/>
-    <el-table-column label="Username" prop="username"/>
-    <el-table-column label="Email" prop="email"/>
-    <el-table-column label="Created At" prop="createdAt"/>
-
-    <el-table-column label="Action" width="150">
-      <template #default="scope">
-        <div class="flex items-center justify-center gap-2">
-          <el-tag type="primary">
-            <Icon name="solar:eye-linear"/>
-          </el-tag>
-          <el-tag type="success">
-            <Icon name="akar-icons:edit"/>
-          </el-tag>
-          <el-tag type="danger">
-            <Icon name="akar-icons:edit"/>
-          </el-tag>
-        </div>
-      </template>
-    </el-table-column>
-
-   </ElTable>
+  <div class="h-screen w-full flex items-center justify-center">
+    <div class="bg-white w-[25%] border flex items-center justify-center flex-col gap-5 p-2 py-4 rounded-md">
+      <h1 class="font-medium text-gray-600">Welcome To My App</h1>
+      <ElButton type="success" class="w-full">Click Here To Detail</ElButton>
+    </div>
   </div>
 </template>
 
